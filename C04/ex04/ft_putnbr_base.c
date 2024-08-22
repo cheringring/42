@@ -40,15 +40,12 @@ void ft_putnbr_base(int nbr, const char *base) {
 
     while (base[base_len]) base_len++;
 
-    if (nbr_final == NULL) return;
-
     if (nbr < 0) {
         ft_putchar('-');
         nbr = -nbr;
     }
     if (nbr == 0) {
         ft_putchar(base[0]);
-        free(nbr_final);
         return;
     }
     while (nbr) {
