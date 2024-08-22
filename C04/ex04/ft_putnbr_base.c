@@ -45,7 +45,7 @@ void ft_putnbr_base(int nbr, const char *base) {
         nbr = -nbr;
     }
     if (nbr == 0) {
-        ft_putchar(base[0]);
+        ft_putchar("0");
         return;
     }
     while (nbr) {
